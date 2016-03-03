@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
-<script src="../../../bower_components/angular/angular.js"></script>
+<head>
+  <title>My first angular application</title>
+
+</head>
+
 <body>
 
 <div ng-app="myApp" ng-controller="HelloCtrl">
     {{greetings}}
 </div>
+
+<script src="../../../bower_components/angular/angular.js"></script>
+<script src="../../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
     <script>
 var app = angular.module('myApp', []);
@@ -14,6 +21,8 @@ app.controller('HelloCtrl', function($scope) {
 });
 
     </script>
+
+
 
 </body>
 </html>
