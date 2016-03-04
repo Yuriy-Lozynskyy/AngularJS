@@ -1,1 +1,1 @@
-var app = angular.module("simpleChatApplication", ["ui.router"]);
+angular.module("simpleChatApplication", ["ui.router"]);
