@@ -6,16 +6,25 @@
 </head>
 
 <body>
+<div>
+  <ul>
+    <li><a href="#" ui-sref="first">First</a></li>
+    <li><a href="#" ui-sref="second">Second</a></li>
+  </ul>
+</div>
 
 <div ui-view></div>
 
 <script src="../../../bower_components/angular/angular.js"></script>
 <script src="../../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
-<!--Controllers-->
-<script src="./first/FirstController.js"></script>
-
 <script src="index.module.js"></script>
+
+
+<!--Controllers-->
+<script src="./components/first/FirstController.js"></script>
+<script src="./components/second/SecondController.js"></script>
+
 <script src="index.config.js"></script>
 <script src="index.route.js"></script>
 
