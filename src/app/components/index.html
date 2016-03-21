@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="simpleChatApplication">
 <head>
   <title>My first angular application</title>
 
@@ -7,12 +7,14 @@
 
 <body>
 
-<div ng-app="myApp" ng-controller="HelloCtrl">
-    {{greetings}}
-</div>
+<div ui-view></div>
 
 <script src="../../../bower_components/angular/angular.js"></script>
 <script src="../../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!--Controllers-->
+<script src="./first/FirstController.js"></script>
+
 <script src="index.module.js"></script>
 <script src="index.config.js"></script>
 <script src="index.route.js"></script>

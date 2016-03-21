@@ -1,4 +1,4 @@
-angular.module("simpleChatApplication").router(routerConfig);
+angular.module("simpleChatApplication").config(routerConfig);
 function routerConfig($stateProvider){
   $stateProvider
      .state('first', {
