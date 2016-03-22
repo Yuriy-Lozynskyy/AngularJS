@@ -7,7 +7,7 @@ function routerConfig($stateProvider){
        controller: 'FirstController'
      })
      .state('second', {
-       url: '/second',
+       url: '/about',
        templateUrl: './components/second/second.html',
        controller: 'SecondController'
      })
