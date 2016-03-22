@@ -1,3 +1,4 @@
+(function {
 angular.module("simpleChatApplication").config(routerConfig);
 function routerConfig($stateProvider){
   $stateProvider
@@ -12,3 +13,4 @@ function routerConfig($stateProvider){
        controller: 'SecondController'
      })
   };
+})();
