@@ -1,4 +1,4 @@
 angular.module("simpleChatApplication").factory('ChatService',ChatService);
-function ChatService($scope){
-  $scope.messages=['first','second','third'];
+function ChatService(){
+  var messages=['first','second','third'];
 };
