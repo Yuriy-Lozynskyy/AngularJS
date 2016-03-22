@@ -2,8 +2,9 @@ angular.module("simpleChatApplication").controller("FirstController",FirstContro
 function FirstController($scope){
      $scope.messages=[];
      $scope.text='';
+     $scope.addNewMessage = addNewMessage;
 
-        $scope.input=function(){
+        function addNewMessage(){
 
           $scope.messages.push($scope.text);
      };

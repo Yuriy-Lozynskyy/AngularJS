@@ -9,7 +9,7 @@
                 </div>
 				          <div class="panel-body">
 				  	        <ul>
-						          <li ng-repeat="message in messages">{{message}}</li>
+						          <li ng-repeat="message in messages track by $index">{{message}}</li>
 				    	      </ul>
 			        	</div>
 	        </div>
@@ -17,7 +17,7 @@
     <div class="form-group">
         <label for="text"></label>
         <input type="text" ng-model="text" class="form-control" placeholder="Enter some text here..."></div>
-        <button ng-click="input()" class="btn btn-default">Send</button>
+        <button ng-click="addNewMessage()" class="btn btn-default">Send</button>
       </form>
     </div>
   </div>
