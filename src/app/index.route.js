@@ -2,15 +2,15 @@
 angular.module("simpleChatApplication").config(routerConfig);
 function routerConfig($stateProvider){
   $stateProvider
-     .state('first', {
+     .state('chat', {
        url: '/',
-       templateUrl: './components/first/first.html',
-       controller: 'FirstController'
+       templateUrl: './components/Chat/Chat.html',
+       controller: 'ChatController'
      })
-     .state('second', {
+     .state('about', {
        url: '/about',
-       templateUrl: './components/second/second.html',
-       controller: 'SecondController'
+       templateUrl: './components/About/About.html',
+       controller: 'AboutController'
      })
   };
 })();
