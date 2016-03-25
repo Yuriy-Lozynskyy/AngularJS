@@ -1,13 +1,13 @@
 (function() {
   angular.module("simpleChatApplication").controller("ChatController",ChatController);
-function ChatController($scope){
-     $scope.messages=[];
+function ChatController($scope,chatService){
+     $scope.messages=chatService.getMessages();
      $scope.text='';
      $scope.addNewMessage = addNewMessage;
 
         function addNewMessage(){
-
-          $scope.messages.push($scope.text);
+            chatService.sendMessage($scope.text);
+          //$scope.messages.push($scope.text);
      };
    };
 })();
