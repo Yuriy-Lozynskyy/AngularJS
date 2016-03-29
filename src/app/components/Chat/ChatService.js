@@ -11,16 +11,21 @@ function chatService($http){
         method : "GET",
         url : "http://simple-chat-example.herokuapp.com/v1/messages"
     }).then(function mySucces(response) {
-          for (var i=0;i<=response.data.messages.length;i++){
+          for (var i=0;i<response.data.messages.length;i++){
             messages.push(response.data.messages[i]);
       };
     }, function myError(response) {
-        messages = response.statusText.messages;
+        messages = response.statusText;
     });
+      return messages;
   };
 
   function sendMessage(message){
-    messages.push(message);
+    $http({
+        method : "POST",
+        url : "http://simple-chat-example.herokuapp.com/v1/messages"
+        data: { text: message }
+    })
   };
      return service;
 };

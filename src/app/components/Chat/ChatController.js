@@ -9,5 +9,8 @@ function ChatController($scope,chatService){
             chatService.sendMessage($scope.text);
           //$scope.messages.push($scope.text);
      };
+        setInterval(function () {
+            $scope.messages = chatService.getMessages
+        },5000);
    };
 })();
